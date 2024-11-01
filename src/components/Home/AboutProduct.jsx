@@ -8,7 +8,7 @@ const AboutProduct = () => {
       
       <div className="flex flex-col gap-5">
         <p className='text-sideColor text-sm '>Our Amazing Story</p>
-        <h1 className="text-2xl font-bold mb-4">10k+ Happ<span className="bg-yellowUnderneath">y Customers</span> </h1>
+        <h1 className="text-2xl font-bold mb-4">10k+ Happ<span className="bg-yellowUnderneath pb-3">y Customers</span> </h1>
         <p className='text-sideColor text-sm'>There&apos;s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</p>
         <div className="flex items-center gap-1">
           <FaCaretRight />

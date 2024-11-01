@@ -12,8 +12,8 @@ const Questions = () => {
 
   return (
     <section className="w-9/12 mx-auto flex mt-16 gap-24 max-lg:w-[90%] max-lg:gap-6 max-lg:flex-col">
-      <div className="flex flex-col gap-6 w-[30%] max-lg:w-full">
-        <h2 className="font-bold text-2xl">Sleepstiq <span className="bg-yellowUnderneath ">Product</span> </h2>
+      <div className="flex flex-col gap-6 w-[38%] max-lg:w-full">
+        <h2 className="font-bold text-2xl">Sleepstiq<span className="pb-3 pr-12 bg-yellowUnderneath "> Product</span> </h2>
         <p>Order</p>
         <p>Melantonin</p>
       </div>
