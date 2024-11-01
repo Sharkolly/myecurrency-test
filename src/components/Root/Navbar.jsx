@@ -22,16 +22,16 @@ const Navbar = () => {
               <IoMdClose onClick={() => setToogleBtn(!toogleBtn)} className="text-mainColor w-8 h-8 " />
             </li>
             <li>
-              <NavLink to='/'>Home</NavLink>
+              <NavLink className={({ isActive }) => isActive ? 'font-bold' : ''} to='/'>Home</NavLink>
             </li>
             <li>
-              <NavLink to='/about'>About</NavLink>
+              <NavLink to='#'>About</NavLink>
             </li>
             <li>
-              <NavLink to='/shop'>Shop</NavLink>
+              <NavLink className={({ isActive }) => isActive ? 'font-bold' : ''} to='/shop'>Shop</NavLink>
             </li>
             <li>
-              <NavLink to='/FAQ'>FAQs</NavLink>
+              <NavLink className={({ isActive }) => isActive ? 'font-bold' : ''} to='/FAQ'>FAQs</NavLink>
             </li>
           </ul>
         </li>

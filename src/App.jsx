@@ -7,12 +7,11 @@ import FAQ from './components/FAQ/FAQ'
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route element={<Layout/>}>
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/' element={<AboutPage/>}/>
-        <Route path='/shop' element={<AboutPage/>}/>
-        <Route path='/FAQ' element={<FAQ/>}/>
-        <Route path="*" />
+      <Route element={<Layout />}>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/shop' element={<AboutPage />} />
+        <Route path='/FAQ' element={<FAQ />} />
+        <Route path="*" element={<Layout />}/>
       </Route>
     )
   )
