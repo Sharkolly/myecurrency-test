@@ -6,7 +6,7 @@ import Influencive from '../../assets/Logo_Black_Large_Slogan_newfont2 1.png';
 
 const Intro = () => {
     return (
-        <header className="bg-[url('./src/assets/homepage.png')] h-[85vh] z-[-11] bg-fixed bg-no-repeat w-full bg-cover bg-center relative">
+        <header className="bg-[url('./src/assets/homepage.png')] h-[85vh] z-[-11] bg-fixed bg-no-repeat w-full bg-cover bg-center relative home">
             <div className="pt-[11em] w-9/12 mx-auto max-lg:w-[92%] max-lg:pt-[12em] max-md:pt-[9.5em]">
                 <div className="w-[55%] flex flex-col gap-5 max-lg:w-[92%] max-lg:mx-auto">
                     <p>We&apos;re here to help you</p>

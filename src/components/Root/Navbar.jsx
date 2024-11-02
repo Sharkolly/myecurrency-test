@@ -8,8 +8,8 @@ const Navbar = () => {
   const [toogleBtn, setToogleBtn] = useState(false);
   return (
     <nav className='max-lg:w-full'>
-      <ul className="absolute flex w-[40%] justify-between items-center left-[11rem] mt-5 text-mainColor  max-lg:w-[150%] max-lg:mx-auto max-lg:gap-0 max-lg:justify-between max-lg:left-[2.5em] max-md:left-[1.5em]">
-        <li className="z-[10] max-lg:w-[130%]">
+      <ul className="absolute flex w-[40%] justify-between items-center left-[11rem] mt-5 text-mainColor  max-lg:w-[90%] max-lg:mx-auto  max-lg:justify-between max-lg:left-[2.5em] max-md:left-[1.5em]">
+        <li className="z-[10] max-lg:w-[9500%]">
           <img src={Logo} alt="Logo" className="z-[10] max-lg:w-[90px]" />
         </li>
 

@@ -5,7 +5,6 @@ import CEO from '../../assets/160-1600378_transparent-happy-person-png-happy-man
 const AboutProduct = () => {
   return (
     <section className="mt-[8em] w-9/12 mx-auto flex gap-72 items-center max-lg:flex-col max-lg:mt-[2em] max-lg:gap-8" >
-      
       <div className="flex flex-col gap-5">
         <p className='text-sideColor text-sm '>Our Amazing Story</p>
         <h1 className="text-2xl font-bold mb-4">10k+ Happ<span className="bg-yellowUnderneath pb-3">y Customers</span> </h1>

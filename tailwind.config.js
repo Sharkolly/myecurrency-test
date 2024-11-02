@@ -26,7 +26,8 @@ export default {
       },
       boxShadow: {
         james: '0 100px 100px 0 rgba(0, 0, 0, 0.15)',
-        companies: '50px 50px 100px 0 rgba(0, 0, 0, 0.15)'
+        companies: '50px 50px 100px 0 rgba(0, 0, 0, 0.15)',
+        mine:  '100px 0px 100px 0 rgba(0, 0, 0, 0.15)'
       }
     },
   },

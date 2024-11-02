@@ -4,11 +4,16 @@ import facebook from '../../assets/Group 48.svg';
 import twitter from '../../assets/Group 47.svg';
 import google from '../../assets/Group 46.svg';
 import linkedIn from '../../assets/Group 45.svg';
+import footer from '../../assets/footer (1).svg';
+
 
 const Footer = () => {
   return (
     <footer className="bg-mainColor mt-24
-    pb-10">
+    pb-10 relative">
+      <div className=" relative">
+        <img src={footer} className='object-cover absolute top-0 bottom-0 max-lg:absolute max-lg:top-[40%] max-lg:h-[1000px]  max-lg:bottom-0 ' alt="Footer Svg" />
+      </div>
       <div className="w-10/12 mx-auto">
         <div className='flex justify-center py-6'>
           <img src={Logo} alt="Logo Image" />
