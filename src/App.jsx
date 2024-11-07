@@ -1,23 +1,41 @@
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
-import Layout from './Layout'
-import HomePage from './components/Home/HomePage'
-import AboutPage from './components/Shop/AboutPage'
-import FAQ from './components/FAQ/FAQ'
-
+import { useState, useEffect } from 'react';
 function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route element={<Layout />}>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/shop' element={<AboutPage />} />
-        <Route path='/FAQ' element={<FAQ />} />
-        <Route path="*" element={<Layout />}/>
-      </Route>
-    )
-  )
+  const [data, setData] = useState([]);
+  const [dataAmount, setDataAmount] = useState({});
+  const [amount, setAmount] = useState(null);
+  const [currencyName, setCurrencyName] = useState([]);
+  const [newCurrency, setNewCurrency] = useState(null)
+  const fetchData = async () => {
+    const fetchD = await fetch(`https://api.exchangerate-api.com/v4/latest/USD`);
+    const dataResponse = await fetchD.json();
+    setDataAmount(dataResponse);
+    const currencyList = Object.keys(dataResponse.rates);
+    setCurrencyName(currencyList);
+    setData([...data, dataResponse]);
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const changeCurrency = (value) => {
+    const amountRate = dataAmount.rates[value];
+    setAmount(amountRate);
+    setNewCurrency(value);
+  }
   return (
     <>
-      <RouterProvider router={router} />
+      <div>
+        <input type='text' />
+          <select name="currency"  onChange={(e) => {
+            changeCurrency(e.target.value);
+          }}>
+          {currencyName.map((currency, index) => (
+            <option value={currency} key={index} >{currency}</option>
+          ))}
+          </select>
+        <h1> {amount} { newCurrency}</h1>
+      </div>
     </>
   )
 };
